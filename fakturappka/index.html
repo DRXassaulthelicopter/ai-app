@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <h1>Invoice Manager</h1>
+        <div class="invoice-container" id="invoice-container">
+            <!-- Invoices will be added here -->
+        </div>
+        <div class="add-invoice">
+            <input type="text" id="title" placeholder="Invoice Title" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <input type="date" id="dueDate" placeholder="Due Date" required>
+            <select id="type">
+                <option value="One-Time">One-Time</option>
+                <option value="Cyclic">Cyclic</option>
+            </select>
+            <button onclick="addInvoice()">Add Invoice</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

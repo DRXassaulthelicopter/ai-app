@@ -1,0 +1,83 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    /* Adjust width as needed */
+    margin: 0 auto;
+    /* Center horizontally */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.invoices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.invoice {
+    background-color: #e0f2f1;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(33% - 20px);
+    /* Adjust based on desired number of invoices per row */
+    cursor: pointer;
+    /* Indicate hover interaction */
+    transition: background-color 0.2s ease-in-out;
+}
+
+.invoice:hover {
+    background-color: #d0e6e5;
+    /* Slight color change on hover */
+}
+
+.invoice h3,
+.invoice p {
+    margin-bottom: 5px;
+}
+
+.invoice button {
+    background-color: #90EE90;
+    /* Light green for "paid" button */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.invoice button:hover {
+    background-color: #67BC67;
+    /* Darker green on hover */
+}
+
+.add-invoice {
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    box-shadow: 0 2
+}
